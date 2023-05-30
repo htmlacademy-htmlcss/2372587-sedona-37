@@ -184,20 +184,6 @@
               </li>
               <li class="hotel_card">
                 <a class="hotel_card_link" href="#">
-                  <img class="hotel_card_image" src="#" alt="Villas at Poco Diablo">
-                  <h3 class="hotel_card_title"> Villas at Poco Diablo</h3>
-                </a>
-                <span class="hotel_card_type">Гостинница</span>
-                <b class="hotel_card_price">От 5000 ₽</b>
-                <a class="hotel_card_more_button button" href="#">Подробнее</a>
-                <a class="hotel_card_like_button button" href="#">В избранное</a>
-                <p class="stars star_4">
-                  <span class="visually-hidden">4 звезды</span>
-                </p>
-                <a class="hotel_card_rating_button button" href="#">Рейтинг: 9,2</a>
-              </li>
-              <li class="hotel_card">
-                <a class="hotel_card_link" href="#">
                   <img class="hotel_card_image" src="#" alt="Desert Quail Inn">
                   <h3 class="hotel_card_title"> Desert Quail Inn</h3>
                 </a>
@@ -225,7 +211,50 @@
                 <a class="hotel_card_rating_button button" href="#">Рейтинг: 5,0</a>
               </li>
         </ul>
+        <ul class="pagination">
+            <li class="pagination_item">
+              <a class="pagination_link pagination-current">1</a>
+            </li>
+            <li class="pagination_item">
+              <a class="pagination_link" href="#">2</a>
+            </li>
+            <li class="pagination_item">
+              <a class="pagination_link" href="#">3</a>
+            </li>
+            <li class="pagination_item">
+              <a class="pagination_link" href="#">4</a>
+            </li>
+            <li class="pagination_item">
+                <a class="pagination_link" href="#">...</a>
+              </li>
+              <li class="pagination_item">
+                <a class="pagination_link" href="#">10</a>
+              </li>
+         </ul>
+
 </section>
+<section class="subscription_catalog">
+    <h2 class="subscription_title_catalog">Подпишитесь на рассылку</h2>
+    <p class="subscription_description_catalog">
+      Только полезная информация и никакого спама, честное бойскаутское!
+    </p>
+    <form
+      class="subscription_form_catalog"
+      action="https://echo.htmlacademy.ru/"
+      method="post"
+    >
+      <input
+        class="field"
+        type="email"
+        placeholder="Ваш e-mail"
+        name="subscription_email"
+        required
+      />
+      <button class="button subscription_catalog_button" type="submit">
+        <span class="visually_hidden">Подписаться</span>
+      </button>
+    </form>
+  </section>
 
     </main>
     <footer class="page_footer">
