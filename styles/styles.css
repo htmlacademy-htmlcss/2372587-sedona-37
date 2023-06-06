@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: "ptsans";
+   font-style: normal;
+   font-weight: 400;
+   src: url(../fonts/ptsans-400.woff2);
+   font-display: swap;
+}
+@font-face {
+    font-family: "ptsans";
+   font-style: normal;
+   font-weight: 700;
+   src: url(../fonts/ptsans-700.woff2);
+   font-display: swap;
+}
+body {
+    font-family: "ptsans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
