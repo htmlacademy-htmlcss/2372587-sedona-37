@@ -7,6 +7,7 @@
 
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
         <nav class="navigation">
           <img
@@ -53,8 +54,9 @@
             </li>
           </ul>
         </nav>
-      </header>
-      <main class="main_inner">
+    </header>
+      <main class="main_inner main_container">
+        <div class="page_container">
       <section class="inner">
       <header class="inner_header">
         <h1 class="inner_header_title">Гостиницы Седоны</h1>
@@ -69,9 +71,9 @@
             <a class="breadcrumbs-link">Гостинницы</a>
           </li>
         </ul>
-    </header>
+      </header>
         <section class="catalog_hotel">
-          <h2 class="visually_hidden">Список гостинниц с фильтрами</h2>
+          <!-- <h2 class="visually_hidden">Список гостинниц с фильтрами</h2> -->
 
           <form
             class="catalog_filter"
@@ -108,29 +110,25 @@
                 <legend class="catalog_filter_title">Тип жилья:</legend>
                 <ul class="catalog_filter_list">
                   <li class="catalog_filter_item">
-
                       <input class="control_input" type="radio" name="type_of_housing" value="hotel" checked>
-
                       Гостинница
                     </label>
                   </li>
-                  <li class="catalog_filter_group">
+                  <li class="catalog_filter_list">
                     <label class="control">
                       <input class="control_input" type="radio" name="type_of_housing" value="motel" >
-
                       Мотель
                     </label>
                   </li>
-                  <li class="catalog_filter_group">
+                  <li class="catalog_filter_list">
                     <label class="control">
                       <input class="control_input" type="radio" name="type_of_housing" value="Apartments">
-
                       Апартаменты
                     </label>
                   </li>
                 </ul>
-              </fieldset>
-              <fieldset class="catalog_filter_group">
+            </fieldset>
+            <fieldset class="catalog_filter_group_sale">
                 <legend class="catalog_filter_title">Стоимость, ₽:</legend>
                 <label class="Visually_hidden" >
                     <input type="number" name="catalo_price_from" min="0" placeholder="от" value="0">
@@ -144,35 +142,37 @@
                     <label class="cost_slider_range">
                         stub slider
                         <input type="range">
-
                     </label>
-
                 </div>
-              </fieldset>
+
             <button class="button" type="submit">Применить</button>
             <button class="reset" type="reset">Сбросить</button>
+            </fieldset>
           </form>
         </section>
       </section>
-<section class="results">
-<h2 class="results_title">Найдено гостиниц: 38</h2>
-<select class="select_control" aria-label="Сортировка">
+      <section class="results">
+        <div class="results_title_inner">
+        <h2 class="results_title">Найдено гостиниц: 38</h2>
+        <select class="select_control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
-
         </select>
+        <div class="button_light_container">
         <a href="#" class="button button_light">
             <img src="images/icons/description_cards1.svg" alt="Показать карточки с описанием" width="16" height="14">
-            <span class="visually_hidden">Показать карточки с описанием</span>
+           <!-- <span class="visually_hidden">Показать карточки с описанием</span>-->
           </a>
         <a href="#" class="button button_light">
             <img src="images/icons/description_cards2.svg" alt="Показать список" width="16" height="14">
-          <span class="visually_hidden">Показать список</span>
+         <!-- <span class="visually_hidden">Показать список</span>-->
         </a>
-        <a class="button" href="#">
+        <a class="button button_light" href="#">
             <img src="images/icons/description_cards3.svg" alt="Показать карточки" width="16" height="14">
-          <span class="visually_hidden">Показать карточки</span>
+         <!-- <span class="visually_hidden">Показать карточки</span>-->
         </a>
+        </div>
+        </div>
         <ul class="hotel_list">
             <li class="hotel_card">
               <a class="hotel_card_link" href="#">
@@ -259,9 +259,9 @@
                 <a class="pagination_link" href="#">10</a>
               </li>
          </ul>
-
-</section>
-<section class="subscription_catalog">
+      </section>
+        </div>
+        <section class="subscription_catalog">
     <h2 class="subscription_title_catalog">Подпишитесь на рассылку</h2>
     <p class="subscription_description_catalog">
       Только полезная информация и никакого спама, честное бойскаутское!
@@ -282,10 +282,11 @@
         <span class="visually_hidden">Подписаться</span>
       </button>
     </form>
-  </section>
+        </section>
 
-    </main>
+     </main>
     <footer class="page_footer">
+      <div class="page_footer_container">
         <section class="footer_contacts">
           <h2 class="vissually_hidder">Соцсети</h2>
           <ul class="footer_contacts_social">
@@ -327,6 +328,8 @@
             />
           </a>
         </section>
+      </div>
       </footer>
+    </div>
     </body>
 </html>

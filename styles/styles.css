@@ -1,16 +1,16 @@
 
 @font-face {
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans";
    font-style: normal;
    font-weight: 400;
-   src: url(../fonts/ptsans-400.woff2);
+   src: url("../fonts/ptsans-400.woff2");
    font-display: swap;
 }
 @font-face {
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans";
    font-style: normal;
    font-weight: 700;
-   src: url(../fonts/ptsans-700.woff2);
+   src: url("../fonts/ptsans-700.woff2");
    font-display: swap;
 }
 body {
@@ -19,7 +19,21 @@ body {
     color: black;
     font-size: 30px;
     line-height: 36px;
-    background-color: white;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+  }
+.main_container {
+    flex-grow: 1;
+}
+  html {
+    height: 100%;
+  }
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #FFFFFF;
+
   }
 .page_header {
     font-family: "PT Sans", sans-serif;
@@ -28,6 +42,22 @@ body {
     line-height: 24px;
     color: #000000;
     background-color: #ffffff;
+}
+.navigation {
+    display: flex;
+    margin: 0 auto;
+}
+.navigation_list {
+    margin: 0;
+    padding: 0;
+    width: 340px;
+}
+.navigation_user {
+    max-width: 290px;
+    margin-left: auto;
+}
+.icon {
+margin-left: 70px;
 }
 .navigation_link {
     color: #000000;
@@ -46,6 +76,25 @@ body {
 .main_index {
     background-image: url(../images/index-background.jpg);
     background-repeat: no-repeat;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+.advantages {
+    max-width: 1200px ;
+}
+.advantages_list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantages_item {
+    width: 400px;
+    height: 385px;
 }
 .advantages_text {
     width: 1200px;
@@ -71,10 +120,6 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
-}
-.advantages_item {
-    width:  400px;
-    height: 385px;
 }
 .advantages_title {
     font-family: "PT Sans", sans-serif;
@@ -108,13 +153,16 @@ body {
  .categor_2_2 {
     color: #333333;
  }
-.sedona_city {
-    padding-left: 400px;
-}
+
 .information_block {
     width: 1200px;
     height: 246px;
     padding: 64px, 0px, 64px, 0px;
+}
+.recommendation_list {
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 .recommendation_item {
     width: 400px;
@@ -190,8 +238,23 @@ background-color: rgba(131, 179, 211, 0.12);
 .page_footer {
     background-color: #FFFFFF;
     width: 1200px;
-    height: 120px;
    }
+.page_footer_container {
+    display: flex;
+    margin: 0 auto;
+}
+.footer_contacts {
+    width: 140px;
+    margin-left: 70px;
+}
+.footer_number {
+    max-width: 331px;
+    margin: auto;
+}
+.footer_website {
+    width: 115px;
+    margin-right: 70px;
+}
 .button_vc {
     background-image: url(../images/icons/vk.svg);
     width: 24px;
@@ -222,13 +285,35 @@ background-color: rgba(131, 179, 211, 0.12);
     height: 33px;
 }
 /*Catalog*/
+.catalog_filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
 .inner {
     background-image: url(../images/filtr_backgrund.jpg);
-    background-size: 100% auto;
+    background-size: contain;
     background-repeat: no-repeat;
     color: #FFFFFF;
     background-color: #000000;
+    width: 1200px;
+    height: 412px;
   }
+.breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.catalog_filter_group {
+    width: 151px;
+    margin-left: 70px;
+    }
+.catalog_filter_group_sale {
+    width: 550px;
+    margin-right: 70px;
+    margin-left: auto;
+}
 .inner_header_title {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
@@ -274,8 +359,14 @@ background-color: rgba(131, 179, 211, 0.12);
     line-height: 20px;
     text-transform: uppercase;
     text-align: center;
-    color: #FFFFFF;
     border-color:  rgba(0, 0, 0, 0);
+}
+.results_title_inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
 }
 .results_title {
     font-family: "PT Sans", sans-serif;
@@ -283,6 +374,8 @@ background-color: rgba(131, 179, 211, 0.12);
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    width: 340px;
+    margin-left: 70px;
 }
 .select_control {
     font-family: "PT Sans", sans-serif;
@@ -290,7 +383,27 @@ background-color: rgba(131, 179, 211, 0.12);
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-
+    width: 292px;
+    margin-left: 200px;
+}
+.button_light_container {
+    width: 160px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.button_light {
+    width: 48px;
+}
+.hotel_list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 1060px;
+    flex-wrap: wrap;
+}
+.hotel_card {
+    width: 340px;
 }
 .hotel_card_link {
     font-family: "PT Sans", sans-serif;
@@ -298,7 +411,7 @@ background-color: rgba(131, 179, 211, 0.12);
     font-size: 24px;
     line-height: 28px;
     color: #000000;
-   text-decoration: none;
+    text-decoration: none;
  }
  .hotel_card_type {
     font-family: "PT Sans", sans-serif;
@@ -375,6 +488,13 @@ background-color: rgba(131, 179, 211, 0.12);
     color: #FFFFFF;
     text-decoration: none;
 }
+.pagination {
+    width: 1060px;
+    display: flex;
+}
+.pagination_item {
+    width: 60px;
+}
 .pagination-current {
     background-color: #F2F2F2;
     color: #000000;
@@ -382,6 +502,11 @@ background-color: rgba(131, 179, 211, 0.12);
 .ellipsis {
     background-color: #FFFFFF;
     color: #000000;
+}
+.subscription_form_catalog {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
 }
 .subscription_title_catalog {
     font-family: "PT Sans", sans-serif;
