@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page_header">
       <nav class="navigation">
         <img
           class="icon"
@@ -37,7 +38,7 @@
             </a>
           </li>
           <li class="navigation_item">
-            <a class="navigation_link" href="#">Хочу сюда!</a>
+            <a class="navigation_link navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +55,8 @@
       <section class="advantages">
         <div class="advantages_text">
           <h2 class="large_text">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
+            Седона — небольшой городок в Аризоне, <br />
+            заслуживающий большего!
           </h2>
           <p class="small_text">
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
@@ -62,42 +64,44 @@
         </div>
         <h2 class="visually_hidden">Преимущества</h2>
         <ul class="advantages_list">
-          <li class="advantages_item">
+          <li class="advantages_item categor_1">
             <h3 class="advantages_title">Настоящий городок</h3>
             <p class="advantages_description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
             <img
+              class="sedona_city"
               src="images/sedona_city.jpg"
               alt="Вид на город"
               width="800"
               height="385"
             />
           </li>
-          <li class="advantages_item">
+          <li class="advantages_item categor_2">
             <h3 class="advantages_title">Небольшая площадь</h3>
-            <p class="advantages_description">
+            <p class="advantages_description categor_2_2">
               Все достопримечательности находятся очень близко
             </p>
           </li>
-          <li class="advantages_item">
+          <li class="advantages_item categor_3">
             <h3 class="advantages_title">Красивая дорога</h3>
-            <p class="advantages_description">
+            <p class="advantages_description categor_2_2">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
-          <li class="advantages_item">
+          <li class="advantages_item categor_2">
             <h3 class="advantages_title">Мало туристов</h3>
-            <p class="advantages_description">
+            <p class="advantages_description categor_2_2">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
-          <li class="advantages_item">
+          <li class="advantages_item categor_1">
             <h3 class="advantages_title">Там есть мост дьявола</h3>
             <p class="advantages_description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
             <img
+              class="devil_bridge"
               src="images/devil's_bridge.jpg"
               alt="Мост Дьявола"
               width="800"
@@ -106,7 +110,7 @@
           </li>
         </ul>
       </section>
-      <section class="information block">
+      <section class="information_block">
         <h2 class="large_text">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </h2>
@@ -115,7 +119,7 @@
       <section class="recommendation">
         <h2 class="visually_hidden">Рекомендуем</h2>
         <ul class="recommendation_list">
-          <li class="recommendation_item">
+          <li class="recommendation_item blue">
             <h3 class="recommendation_title">Жильё</h3>
             <p class="recommendation_description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
@@ -127,7 +131,7 @@
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="recommendation_item">
+          <li class="recommendation_item blue">
             <h3 class="recommendation_title">Сувениры</h3>
             <p class="recommendation_description">
               Не только китайского, но и настоящего местного производства!
@@ -142,7 +146,7 @@
           предложения гостиниц в Седоне
         </p>
         <form action="#">
-          <button>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+          <button class="search_hotel">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         </form>
       </section>
       <section class="subscription">
