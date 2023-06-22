@@ -7,6 +7,7 @@
 
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
         <nav class="navigation">
           <img
@@ -53,23 +54,26 @@
             </li>
           </ul>
         </nav>
-      </header>
-      <main class="main_inner">
+    </header>
+      <main class="main_inner main_container">
+        <div class="page_container">
       <section class="inner">
       <header class="inner_header">
         <h1 class="inner_header_title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="visually_hidden" href="index.html">
+            <a class="icons_home" href="index.html">
               <img src="images/icons/Home_cite.svg" alt="Главная" width="12" height="12"
-            /> Главная</a>
+            />
+            <span class="visually_hidden">Главная</span>
+          </a>
           </li>
-          <img src="images/icons/arrow.svg" alt="путь" width="6.39" height="9.94">
+          <img class="icons_arrow" src="images/icons/arrow.svg" alt="путь" width="6.39" height="9.94">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостинницы</a>
           </li>
         </ul>
-    </header>
+      </header>
         <section class="catalog_hotel">
           <h2 class="visually_hidden">Список гостинниц с фильтрами</h2>
 
@@ -108,29 +112,25 @@
                 <legend class="catalog_filter_title">Тип жилья:</legend>
                 <ul class="catalog_filter_list">
                   <li class="catalog_filter_item">
-
                       <input class="control_input" type="radio" name="type_of_housing" value="hotel" checked>
-
                       Гостинница
                     </label>
                   </li>
-                  <li class="catalog_filter_group">
+                  <li class="catalog_filter_list">
                     <label class="control">
                       <input class="control_input" type="radio" name="type_of_housing" value="motel" >
-
                       Мотель
                     </label>
                   </li>
-                  <li class="catalog_filter_group">
+                  <li class="catalog_filter_list">
                     <label class="control">
                       <input class="control_input" type="radio" name="type_of_housing" value="Apartments">
-
                       Апартаменты
                     </label>
                   </li>
                 </ul>
-              </fieldset>
-              <fieldset class="catalog_filter_group">
+            </fieldset>
+            <fieldset class="catalog_filter_group_sale">
                 <legend class="catalog_filter_title">Стоимость, ₽:</legend>
                 <label class="Visually_hidden" >
                     <input type="number" name="catalo_price_from" min="0" placeholder="от" value="0">
@@ -142,37 +142,45 @@
                 </label>
                 <div class="cost_slider">
                     <label class="cost_slider_range">
-                        stub slider
+                        <span class="visually_hidden">stub slider</span>
                         <input type="range">
-
                     </label>
-
                 </div>
-              </fieldset>
+
             <button class="button" type="submit">Применить</button>
             <button class="reset" type="reset">Сбросить</button>
+            </fieldset>
           </form>
         </section>
       </section>
-<section class="results">
-<h2 class="results_title">Найдено гостиниц: 38</h2>
-<select class="select_control" aria-label="Сортировка">
+      <section class="results">
+        <div class="results_title_inner">
+        <h2 class="results_title">Найдено гостиниц: 38</h2>
+        <select class="select_control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
-
         </select>
-        <a href="#" class="button button_light">
-            <img src="images/icons/description_cards1.svg" alt="Показать карточки с описанием" width="16" height="14">
-            <span class="visually_hidden">Показать карточки с описанием</span>
+          <ul class="button_light_container">
+          <li class="button_light_button">
+            <a href="#" class="button_light">
+              <img src="images/icons/description_cards1.svg" alt="Показать карточки с описанием" width="16" height="14">
+             <span class="visually_hidden">Показать карточки с описанием</span>
+            </a>
+          </li>
+          <li class="button_light_button">
+            <a href="#" class="button_light">
+              <img src="images/icons/description_cards2.svg" alt="Показать список" width="16" height="14">
+           <span class="visually_hidden">Показать список</span>
           </a>
-        <a href="#" class="button button_light">
-            <img src="images/icons/description_cards2.svg" alt="Показать список" width="16" height="14">
-          <span class="visually_hidden">Показать список</span>
-        </a>
-        <a class="button" href="#">
-            <img src="images/icons/description_cards3.svg" alt="Показать карточки" width="16" height="14">
-          <span class="visually_hidden">Показать карточки</span>
-        </a>
+          </li>
+          <li class="button_light_button">
+            <a class="button_light" href="#">
+              <img src="images/icons/description_cards3.svg" alt="Показать карточки" width="16" height="14">
+           <span class="visually_hidden">Показать карточки</span>
+          </a>
+          </li>
+        </ul>
+        </div>
         <ul class="hotel_list">
             <li class="hotel_card">
               <a class="hotel_card_link" href="#">
@@ -259,9 +267,9 @@
                 <a class="pagination_link" href="#">10</a>
               </li>
          </ul>
-
-</section>
-<section class="subscription_catalog">
+      </section>
+        </div>
+        <section class="subscription_catalog">
     <h2 class="subscription_title_catalog">Подпишитесь на рассылку</h2>
     <p class="subscription_description_catalog">
       Только полезная информация и никакого спама, честное бойскаутское!
@@ -279,24 +287,25 @@
         required
       />
       <button class="button subscription_catalog_button" type="submit">
-        <span class="visually_hidden">Подписаться</span>
+        <span class="subscribe_news">Подписаться</span>
       </button>
     </form>
-  </section>
+        </section>
 
-    </main>
+     </main>
     <footer class="page_footer">
+      <div class="page_footer_container">
         <section class="footer_contacts">
-          <h2 class="vissually_hidder">Соцсети</h2>
+          <h2 class="visually_hidden">Соцсети</h2>
           <ul class="footer_contacts_social">
             <li class="footer_contacts_item">
               <a class="button_vc" href="https://vk.com/htmlacademy">
-                <span class="vissually_hidder"> Вконтакте </span>
+                <span class="visually_hidden"> Вконтакте </span>
               </a>
             </li>
             <li class="footer_contacts_item">
               <a class="button_tg" href="https://t.me/htmlacademy">
-                <span class="vissually_hidder"> Телеграмм </span>
+                <span class="visually_hidden"> Телеграмм </span>
               </a>
             </li>
 
@@ -305,19 +314,19 @@
                 class="button_ytb"
                 href="https://www.youtube.com/user/htmlacademyru"
               >
-                <span class="vissually_hidder"> Ютуб </span>
+                <span class="visually_hidden"> Ютуб </span>
               </a>
             </li>
           </ul>
         </section>
         <section class="footer_number">
-          <h2 class="vissually_hidder">Номер телефона</h2>
+          <h2 class="visually_hidden">Номер телефона</h2>
           <a class="footer_number_phone" href="tel:+78128121212"
             >+7 (812) 812-12-12</a
           >
         </section>
         <section class="footer_website">
-          <h2 class="vissually_hidder">Вебсайт</h2>
+          <h2 class="visually_hidden">Вебсайт</h2>
           <a class="footer_website_site" href="https://htmlacademy.ru/">
             <img
               src="images/HTML_Academy.svg"
@@ -327,6 +336,8 @@
             />
           </a>
         </section>
+      </div>
       </footer>
+    </div>
     </body>
 </html>
