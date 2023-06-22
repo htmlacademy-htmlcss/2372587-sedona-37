@@ -660,7 +660,6 @@ background-color: rgba(131, 179, 211, 0.12);
 }
 .stars {
      width: 18px;
-     height: 17px;
      font-family: "PT Sans", sans-serif;
      font-weight: 400;
      font-size: 18px;
@@ -747,5 +746,4 @@ background-color: rgba(131, 179, 211, 0.12);
     color: #333333;
     margin: 0;
     padding-bottom: 54px;
-
 }
