@@ -671,22 +671,11 @@ html {
 }
 
 .button_light {
- display: block;
+  display: block;
   text-align: center;
 }
 
-/*
-.hotel_list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  width: 1060px;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding-left: 70px;
-}
-*/
+
 .hotel_list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
