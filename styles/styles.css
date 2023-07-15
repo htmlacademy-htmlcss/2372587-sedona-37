@@ -1028,6 +1028,9 @@ html {
   appearance: none;
   margin: 0;
 }
+.range_input input[type="number"] {
+  appearance: textfield;
+}
 
 .range_toggle {
   position: absolute;
@@ -1652,6 +1655,9 @@ html {
 .search-button-container input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+.search-button-container input[type="number"] {
+  appearance: textfield;
 }
 
 .field_number {
