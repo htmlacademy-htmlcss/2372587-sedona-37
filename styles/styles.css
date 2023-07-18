@@ -1538,7 +1538,7 @@ html {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 80px;
+  top: 60px;
   right: 54px;
   width: 52px;
   height: 52px;
@@ -1571,6 +1571,7 @@ html {
   text-align: left;
   position: relative;
   padding: 0;
+  margin: 0;
   margin-bottom: 64px;
 }
 
@@ -1660,7 +1661,6 @@ html {
   align-self: center;
   margin-right: auto;
 }
-
 .tooltip-text {
   font-family: PT Sans, sans-serif;
   font-size: 16px;
@@ -1683,6 +1683,7 @@ html {
   display: flex;
   width: 247px;
   justify-content: flex-end;
+  margin-left: 20px;
 }
 
 .button-counter {
