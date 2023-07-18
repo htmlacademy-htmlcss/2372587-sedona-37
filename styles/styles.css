@@ -692,7 +692,7 @@ html {
 }
 
 .subscribe_news {
-  padding: 8px 50px;
+  padding: 8px 45px;
   align-self: stretch;
   align-content: stretch;
 
@@ -810,6 +810,8 @@ html {
   padding: 0;
   margin: 0;
   margin-bottom: 40px;
+  margin-top: -5px;
+  align-items: flex-start;
 }
 
 .breadcrumbs_icon {
@@ -886,7 +888,7 @@ html {
 }
 
 .catalog_filter_group:not(:last-child) {
-  margin-right: 70px;
+  margin-right: 65px;
 }
 
 .catalog_filter_item:not(:last-child) {
@@ -1145,9 +1147,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 70px;
-  margin-left: 70px;
-  margin-top: 50px;
+  margin: 50px 70px 40px 70px;
 }
 
 .results_title {
@@ -1164,7 +1164,6 @@ html {
   box-sizing: border-box;
   width: 292px;
   padding: 14px 20px;
-  padding-right: 34px;
   font-family: inherit;
   font-size: 18px;
   color: #333333;
@@ -1175,6 +1174,7 @@ html {
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
+  margin-left: 155px;
 }
 
 .button_light_container {
@@ -1184,6 +1184,8 @@ html {
   list-style-type: none;
   width: 200px;
   margin-left: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 .view_icon {
@@ -1235,8 +1237,8 @@ html {
 .hotel_card {
   display: grid;
   grid-template-columns: 140px 140px;
-  column-gap: 16px;
-  row-gap: 20px;
+  column-gap: 20px;
+  row-gap: 14px;
   grid-template-areas:
   "foto foto"
   "type price"
@@ -1256,10 +1258,17 @@ html {
   text-decoration: none;
   grid-area: foto;
 }
-
+.hotel_card_image {
+  padding: 0;
+  margin: 0;
+}
 .hotel_card_title {
   margin: 0;
-  padding-top: 16px;
+  margin-top: 12px;
+  font-family: PT Sans, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .hotel_card_type {
@@ -1431,7 +1440,7 @@ html {
 }
 
 .subscription_catalog {
-  margin: 96px 258px 104px 258px;
+  margin: 156px 258px 104px 258px;
 }
 
 .subscription_form_catalog {
@@ -1448,7 +1457,6 @@ html {
   text-align: center;
   color: #000000;
   margin: 0;
-  padding-top: 96px;
 }
 
 .subscription_description_catalog {
@@ -1493,6 +1501,7 @@ html {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   cursor: pointer;
+
 }
 
 /*Модальное окно*/
