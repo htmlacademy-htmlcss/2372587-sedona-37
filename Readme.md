@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Шестель](https://up.htmlacademy.ru/htmlcss/37/user/2372587).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Именин](https://htmlacademy.ru/profile/aimenin)
 
 ---
 
