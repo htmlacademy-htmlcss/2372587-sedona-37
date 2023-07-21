@@ -10,13 +10,15 @@
 <div class="container">
   <header class="page_header" data-test="header">
     <nav class="navigation">
-      <img
-        class="icon"
-        src="images/logo.svg"
-        alt="Иконка сайта"
-        width="140"
-        height="70.05"
-      />
+      <a class="navigation_icon" href="index.html">
+        <img
+          class="icon"
+          src="images/logo.svg"
+          alt="Иконка сайта"
+          width="140"
+          height="70"
+        />
+      </a>
       <ul class="navigation_list">
         <li class="navigation_item_push">
           <a class="navigation_link navigation_link_push" href="index.html">Главная</a>
@@ -27,7 +29,6 @@
         <li class="navigation_item">
           <a class="navigation_link" href="catalog.html">Гостиницы</a>
         </li>
-
       </ul>
       <ul class="navigation_list navigation_user">
         <li class="navigation_item">
@@ -38,7 +39,7 @@
         <li class="navigation_item">
           <a class="navigation_link" href="#">
             <span class="visually_hidden"> Лайки </span>
-            <span class="favorite_namb">12</span>
+            <span class="favorite_number">12</span>
           </a>
         </li>
         <li class="navigation_item">
@@ -74,7 +75,7 @@
       </div>
       <h2 class="visually_hidden">Преимущества</h2>
       <ul class="advantages_list">
-        <li class="advantages_item categor_1">
+        <li class="advantages_item category_1">
           <div class="advantages_item_text">
             <h3 class="advantages_title">Настоящий <br>городок</h3>
             <p class="advantages_description">
@@ -89,43 +90,41 @@
             src="images/sedona_city.jpg"
             alt="Вид на город"
             width="800"
-
           />
         </li>
-        <li class="advantages_item categor_2">
+        <li class="advantages_item category_2">
           <div class="advantages_item_text_next">
             <h3 class="advantages_title">Небольшая <br>площадь</h3>
-            <p class="advantages_description categor_2_2">
+            <p class="advantages_description category_2_2">
               Все достопримечательности <br/>находятся очень близко
             </p>
           </div>
         </li>
-        <li class="advantages_item categor_3">
+        <li class="advantages_item category_3">
           <div class="advantages_item_text_next">
             <h3 class="advantages_title">Красивая <br>дорога</h3>
-            <p class="advantages_description categor_2_2">
+            <p class="advantages_description category_2_2">
               Ехать в Седону из Лас-Вегаса <br/>совсем не скучно!
             </p>
           </div>
         </li>
-        <li class="advantages_item categor_2">
+        <li class="advantages_item category_2">
           <div class="advantages_item_text_next">
             <h3 class="advantages_title">Мало <br>туристов</h3>
-            <p class="advantages_description categor_2_2">
+            <p class="advantages_description category_2_2">
               Большинство едет в Гранд <br/>Каньон и толпится там
             </p>
           </div>
         </li>
         <li class="advantages_list">
-
           <img
             class="devil_bridge"
-            src="images/devil's_bridge.jpg"
+            src="images/devils_bridge.jpg"
             alt="Мост Дьявола"
             width="800"
           />
         </li>
-        <li class="advantages_item categor_1">
+        <li class="advantages_item category_1">
           <div class="advantages_item_text">
             <h3 class="advantages_title">Там есть <br>мост дьявола</h3>
             <p class="advantages_description">
@@ -269,10 +268,8 @@
     </div>
   </footer>
   <!-- Модальное окно -->
-
   <div class="modal-container modal-container-close" data-test="modal">
     <div class="modal modal-auth">
-
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <button class="modal-close-button">
@@ -285,7 +282,6 @@
             <label class="search_label" for="data_form_in">Дата заезда:</label>
             <input class="search-form-field form-field" type="text" id="data_form_in" name="data_form_in"
                    placeholder="Укажите дату" value="27 апреля 2020">
-
             <span class="messed-error">Мы не можем отправить вас в прошлое.</span>
           </div>
           <div class="data_form">
@@ -348,14 +344,12 @@
                 <span class="visually_hidden">Добавить место</span>
               </button>
             </div>
-
           </div>
         </div>
         <button class="button button-search" type="submit">Найти</button>
       </form>
     </div>
   </div>
-</div>
 </div>
 </body>
 </html>
